@@ -4,7 +4,7 @@ class ReviewController < ApplicationController
   end
 
   def company
-    @h2 = "CONPANY"
+    @h2 = "COMPANY"
   end
 
   def contact
