@@ -1,0 +1,21 @@
+.contact
+  .contact__title
+  .contact__pan
+  = form_with model: @group, local: true do |f|
+    .contact__form-group
+      = f.label :name 
+      = f.text_field :name, class: 'form-control' , id: 'contact-name'
+    .contact__form-group
+      = f.label :mail 
+        メールアドレス
+      = f.text_field :mail, class: 'form-control' , id: 'contact-mail'
+    .contact__form-group
+      = f.label :phone 
+        電話番号
+      = f.telephone_field  :phone, class: 'form-control' , id: 'contact-phone'
+    .contact__form-group
+      = f.label :content 
+        お問い合わせ
+      = f.text_field :content, class: 'form-control' , id: 'contact-content'
+      = f.submit nil, calss: 'btn btn primary'
+    　　%p プライバシーポリシーについて
