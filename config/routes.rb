@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
-  root 'review#business'
+  root 'review#company'
 
-  resource :review do
-    get 'business'
-    get 'company'
-    get 'contact'
-    get 'message'
-  end
+  get 'review/company' => 'review#company'
+  get 'review/business' => 'review#business'
+  get 'review/message' => 'review#message'
+  get 'review/contact' => 'review#contact'
 end
