@@ -4,20 +4,20 @@ end
 
 # company
 crumb :company do
-  link "COMPANY", "#"
+  link "COMPANY", review_company_path
 end
 
 # business
 crumb :business do
-  link "BUSINESS", "review#business"
+  link "BUSINESS", review_business_path
 end
 
 # message
 crumb :message do
-  link "MESSAGE", "#"
+  link "MESSAGE", review_message_path
 end
 
 # contact
 crumb :contact do
-  link "CONTACT", "#"
+  link "CONTACT", review_contact_path
 end
