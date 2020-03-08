@@ -1,0 +1,17 @@
+.business{
+
+  &__content{
+    word-break: normal;
+    word-wrap: break-word;
+    margin-bottom: 50px;
+
+    &__main{
+      line-height: 180%;
+
+      &__service{
+        display: block;
+
+      }
+    }
+  }
+}
