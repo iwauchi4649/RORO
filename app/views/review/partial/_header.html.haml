@@ -1,0 +1,24 @@
+.header__trigger
+.header__container
+  .header__container__bar
+    %h1.header__container__bar__logo
+      = link_to root_path do
+        = image_tag "RORO.jpg" , size:"150x45"
+    .header__container__bar__info
+      %ul.header__container__bar__info__ul
+        %li.header__container__bar__info__ul__li
+          = link_to business_review_path , class: "header__container__bar__info__ul__li__hover" do
+            %span.jp 会社概要
+            %span.en
+        %li.header__container__bar__info__ul__li
+          = link_to "#", class: "header__container__bar__info__ul__li__hover" do
+            %span.jp 事業内容
+            %span.en
+        %li.header__container__bar__info__ul__li
+          = link_to "#", class: "header__container__bar__info__ul__li__hover" do
+            %span.jp 代表挨拶
+            %span.en
+        %li.header__container__bar__info__ul__li
+          = link_to "#", class: "header__container__bar__info__ul__li__hover" do
+            %span.jp お問い合わせ
+            %span.en
