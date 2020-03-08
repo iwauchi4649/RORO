@@ -1,0 +1,53 @@
+.message-l-contents{
+  word-break: normal;
+  word-wrap: break-word;
+  margin-bottom: 50px;
+
+  &__main{
+    line-height: 180%;
+
+    &__conpany{
+      line-height: 2;
+
+      section{
+        margin: 0 0 40px;
+      }
+
+      &__greeting{
+        margin-bottom: 55px;
+
+        &__container{
+          background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%), url("test.jpg") no-repeat left top;
+          background-size: cover;  
+          width: 1100px;
+          max-width: 1200px;
+          margin-right: auto;
+          margin-left: auto;
+          padding-left: 15px;
+          padding-right: 15px;
+
+          &__ceo-box{
+            margin: 80px 0 80px auto!important;
+            max-width: 570px;
+
+            h2 {
+              font-size: 3.6rem;
+              margin-bottom: 20px;
+              font-weight: 400;
+              font-family: "AxisStd-Bold","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","游ゴシック",YuGothic,"メイリオ",Meiryo,Verdana,sans-serif;
+            }
+
+            p {
+              margin-bottom: 20px;
+            }
+
+            &__ceo-name{
+              text-align: right;
+              margin-bottom: 55px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
