@@ -1,31 +1,35 @@
-.title{
-  margin: 100px 0 80px;
-  position: relative;
-  z-index: 0;
+.common{
+  height: 100px;
 
-  &__container{
-    max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 80px;
-    padding-right: 80px;
+  .title{
+    margin: 100px 0 80px;
+    position: relative;
+    z-index: 0;
 
-    &__bar{
+    &__container{
+      max-width: 1200px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 80px;
+      padding-right: 80px;
 
-      &__text{
-        font-size: 2.5rem;
-        padding: 70px 0;
-        position: relative;
-        float: left;
-      }
+      &__bar{
 
-      &__pan{
-        color: #211a18;
-        float: right;
-        margin-top: 90px;
+        &__text{
+          font-size: 2.5rem;
+          padding: 70px 0;
+          position: relative;
+          float: left;
+        }
 
-        a{
-          text-decoration: none;
+        &__pan{
+          color: #211a18;
+          float: right;
+          margin-top: 90px;
+
+          a{
+            text-decoration: none;
+          }
         }
       }
     }
