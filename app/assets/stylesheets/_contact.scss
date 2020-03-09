@@ -8,15 +8,28 @@
 ====================*/
 @media screen and (max-width:639px) {
   /*スマホ用のcssを記述*/
+  .form-control{
+    width: 20em;             /* 横幅 */
   }
+  #submit-button{
+    width:  15rem;
+  }
+}
+@media screen and (max-width:1023px) {
+  .form-control{
+    width: 20em;             /* 横幅 */
+  }
+  #submit-button{
+    width:  15rem;
+  }
+}
 @media screen and (min-width:1024px) {
   /*pc用のcssを記述*/
-  .contact{
-    &__pan{
-      &__form-group{
-        display: block;
-      }
-    }
+  .form-control{
+    width: 47rem;
+  }
+  #submit-button{
+    width:  47rem;
   }
 }
 html{
@@ -73,7 +86,6 @@ body {
   padding-top: 5px;
   padding: 0.5em;
   background-color: #188dc8;
-  width: 15em;
   height: 8rem;
 }
 .form-control{
@@ -82,9 +94,9 @@ body {
   padding: 0.5em;          /* 内側の余白量 */
   background-color: #fff;  /* 背景色 */
   height: 5rem;
-  width: 20em;             /* 横幅 */
   font-size: 1.3em;          /* 文字サイズ */
   line-height: 1.2;
+  padding-left: 1.1rem;
   
 }
 #contact-name{
