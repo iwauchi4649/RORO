@@ -1,21 +1,35 @@
 .contact
+  %h2 CONTACT
   .contact__title
+    %h2 お問い合わせ
+  .contact__attention
+    %p#attention
+      以下のフォームに必要事項をご記入の上、
+      %br
+      「送信する」をクリックしてください。
+      %br 
+        必須の付いている項目は必ず記入してください。　
   .contact__pan
-  = form_with model: @group, local: true do |f|
-    .contact__form-group
-      = f.label :name 
-      = f.text_field :name, class: 'form-control' , id: 'contact-name'
-    .contact__form-group
-      = f.label :mail 
-        メールアドレス
-      = f.text_field :mail, class: 'form-control' , id: 'contact-mail'
-    .contact__form-group
-      = f.label :phone 
-        電話番号
-      = f.telephone_field  :phone, class: 'form-control' , id: 'contact-phone'
-    .contact__form-group
-      = f.label :content 
-        お問い合わせ
-      = f.text_field :content, class: 'form-control' , id: 'contact-content'
-      = f.submit nil, calss: 'btn btn primary'
-    　　%p プライバシーポリシーについて
+    = form_with model: @group, local: true do |f|
+      .contact__pan__form-group
+        = f.label :name ,"お名前" 
+        %span.form-required  必須
+        .contact__pan__form-group__text
+          = f.text_field :name, class: 'form-control' , id: 'contact-name',placeholder:' RORO太郎'
+      .contact__pan__form-group
+        = f.label :mail ,"メールアドレス"
+        %span.form-required  必須
+        .contact__pan__form-group__text
+          = f.text_field :mail, class: 'form-control' , id: 'contact-mail', placeholder: ' roro@example.com'
+      .contact__pan__form-group
+        = f.label :phone ,'電話番号'
+        %span.form-required  必須
+        .contact__pan__form-group__text
+          = f.telephone_field  :phone, class: 'form-control' , id: 'contact-phone' ,placeholder: ' 09012345678'
+      .contact__pan__form-group
+        = f.label :content ,'お問い合わせ内容'
+        %span.form-required  必須
+        .contact__pan__form-group__text
+          = f.text_area :content, class: 'form-control' , id: 'contact-content', placeholder: ' お問い合わせ内容を記入してください。'
+          = f.submit '送信する', id:'submit-button'
+        %p プライバシーポリシーについて

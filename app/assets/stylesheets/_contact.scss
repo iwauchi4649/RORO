@@ -1,16 +1,103 @@
-.contact{
-  &__title{
-
+/*====================
+スマホを基本設計にする
+- 〜479px：スマートフォン縦
+- 480px〜599px：スマートフォン横
+- 600px〜959px：タブレット
+- 960px〜1279px：小型PC
+- 1280px〜：大型PC
+====================*/
+@media screen and (max-width:639px) {
+  /*スマホ用のcssを記述*/
+  .form-control{
+    width: 20em;             /* 横幅 */
   }
-  &__pan{
-
-  }
-  &__form-group{
-
+  #submit-button{
+    width:  15rem;
   }
 }
-.form-control{
+@media screen and (max-width:1023px) {
+  .form-control{
+    width: 20em;             /* 横幅 */
+  }
+  #submit-button{
+    width:  15rem;
+  }
+}
+@media screen and (min-width:1024px) {
+  /*pc用のcssを記述*/
+  .form-control{
+    width: 47rem;
+  }
+  #submit-button{
+    width:  47rem;
+  }
+}
+html{
+  font-size: 62.5%;
+}
+body {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
 
+.contact{
+  font-size: 1.2rem;
+  padding: 0 20px;
+  h2{
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 40px 0;
+    float: none;
+  }
+  
+  
+  &__title{
+  }
+  &__attention{
+    p#attention{
+      text-align: center;
+    }
+  }
+  &__pan{
+    text-align: -webkit-center;
+    &__form-group{
+      display: table-caption;
+      padding: 8px 0 ;
+      label{
+        font-size: 1.6rem;
+        display: inline-block;
+        padding-bottom: 13px;
+      }
+      .form-required {
+        background: #ea352d;
+        margin: 0 0 0 8px;
+        padding: 2px 4px;
+        border-radius: 2px;
+        color: #fff;
+        font-size: 12px;
+      }
+    }
+  }
+}
+#submit-button{
+  font-size: 2.0rem;
+  color: #fff;
+  margin: 3rem;
+  padding-top: 5px;
+  padding: 0.5em;
+  background-color: #188dc8;
+  height: 8rem;
+}
+.form-control{
+  border: 2px solid #808080;  /* 枠線 */
+  border-radius: 0.67em;   /* 角丸 */
+  padding: 0.5em;          /* 内側の余白量 */
+  background-color: #fff;  /* 背景色 */
+  height: 5rem;
+  font-size: 1.3em;          /* 文字サイズ */
+  line-height: 1.2;
+  padding-left: 1.1rem;
+  
 }
 #contact-name{
 
@@ -22,5 +109,5 @@
 
 }
 #contact-content{
-
+  height: 120px;
 }
