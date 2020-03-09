@@ -8,9 +8,9 @@
       %br
       「送信する」をクリックしてください。
       %br 
-        必須の付いている項目は必ず記入してください。　
+        必須の付いている項目は必ず記入してください。
   .contact__pan
-    = form_with model: @group, local: true do |f|
+    = form_with model: @contact, url: confirm_path,local: true do |f|
       .contact__pan__form-group
         = f.label :name ,"お名前" 
         %span.form-required  必須
