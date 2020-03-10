@@ -1,29 +1,29 @@
 .confirm
-  .contact__pan
+  .confirm__form
     = form_for @contact, :url => done_path do |f|
       %h2 メッセージの確認
-      .contact__pan__form-group
+      .confirm__form__group
         %strong 名前
-        .form-control
-          .confirm-box
+        .confirm__form__group__box
+          .confirm__form__group__box__text
             = f.hidden_field :name
             = @contact.name
-      .contact__pan__form-group
+      .confirm__form__group
         %strong メールアドレス
-        .form-control
-          .confirm-box
+        .confirm__form__group__box
+          .confirm__form__group__box__text
             = f.hidden_field :mail
             = @contact.mail
-      .contact__pan__form-group
+      .confirm__form__group
         %strong 電話番号
-        .form-control
-          .confirm-box
+        .confirm__form__group__box
+          .confirm__form__group__box__text
             = f.hidden_field :phone
             = @contact.phone
-      .contact__pan__form-group
+      .confirm__form__group
         %strong お問い合わせ内容
-        .form-control#content#scr
-          .confirm-box#content-box
+        .confirm__form__group__box
+          .confirm__form__group__box__text#src
             = f.hidden_field :content
             = @contact.content
       = f.submit '戻る', name: 'back', id:'submit-button'
