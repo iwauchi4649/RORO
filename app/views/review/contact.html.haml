@@ -6,7 +6,7 @@
     %p#attention
       以下のフォームに必要事項をご記入の上、
       %br
-      「送信する」をクリックしてください。
+      「確認する」をクリックしてください。
       %br 
         必須の付いている項目は必ず記入してください。
   .contact__pan
@@ -35,5 +35,5 @@
         %span.form-required  必須
         .contact__pan__form-group__text
           = f.text_area :content, class: 'form-control' , id: 'contact-content', placeholder: ' お問い合わせ内容を記入してください。'
-          = f.submit '送信する', id:'submit-button'
+          = f.submit '確認', id:'submit-button'
         %p プライバシーポリシーについて
