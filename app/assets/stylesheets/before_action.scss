@@ -1,0 +1,53 @@
+.num_01:before{
+  background-image: url(image.jpeg);
+  left: 0;
+  position: absolute;
+  content: '';
+  width: 58%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  z-index: 0;
+}
+
+.num_02:before{
+  background-image: url(image.jpeg);
+  right: 0;
+  position: absolute;
+  content: '';
+  width: 58%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  z-index: 0;
+}
+
+.num_03:before{
+  background-image: url(image.jpeg);
+  left: 0;
+  position: absolute;
+  content: '';
+  width: 58%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  z-index: 0;
+}
+
+.button__a:before{
+  position: absolute;
+  content: "\e5cc";
+  font-family: 'Material Icons';
+  font-size: 1.2em;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  transition: all 0.2s ease-in;
+}

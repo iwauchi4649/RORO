@@ -1,16 +1,185 @@
 .business{
 
-  &__content{
-    word-break: normal;
-    word-wrap: break-word;
-    margin-bottom: 50px;
+  &__title{
 
-    &__main{
-      line-height: 180%;
+    h3{
+      text-align: center;
+      font-size: 2.8rem;
+      padding: 40px 0;
+      float: none;
+    }
+  }
 
-      &__service{
-        display: block;
+  &__description{
 
+    p{
+      text-align: center;
+    }
+  }
+
+  &__list{
+    margin-top: 3.9em;
+
+    // 右側のリスト
+    .num_01 , .num_03{
+      position: relative;
+      min-height: 436px;
+      margin-bottom: 64px;
+      
+      .inner{
+        align-items: flex-end;
+        margin: 0 auto;
+        display: flex;
+        height: 100%;
+
+        &__right {
+          padding-right: 155px;
+          min-width: 598px;
+          width: 50%;
+          box-sizing: border-box;
+          margin-left: auto;
+          position: relative;
+          z-index: 10;
+          max-width: 730px;
+
+          &__white{
+            padding: 15px 0 90px 60px;
+            background-color: #fff;
+
+            h4{
+              margin-bottom: 20px;
+              font-size: 28px;
+
+              span{
+                font-family: 'Amiri', serif;
+                display: block;
+                font-size: 36px;
+                color: #e67e18;
+                line-height: 1;
+                font-style: italic;
+                font-weight: normal;
+                letter-spacing: -.1em;
+
+                em{
+                  margin-left: 0;
+                  font-size: 23px;
+                  color: #f5d1bb;
+                  letter-spacing: 0;
+                }
+              }
+            }
+
+            p{
+              font-size: 15px;
+              line-height: 2.15;
+            }
+
+            .button{
+              margin-top: 42px;
+
+              &__a{
+                width: 260px;
+                padding-left: 2em;
+                justify-content: flex-start;
+                color: #fff;
+                font-weight: normal;
+                font-size: 15px;
+                height: 66px;
+                z-index: 100;
+                overflow: hidden;
+                background: #188dc8;
+                border-radius: 3px;
+                display: inline-flex;
+                align-items: center;
+                text-decoration: none;
+                position: relative;
+                box-sizing: border-box;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // 左側のリスト
+    .num_02{
+      position: relative;
+      min-height: 436px;
+      margin-bottom: 64px;
+      
+      .inner{
+        align-items: flex-end;
+        margin: 0 auto;
+        display: flex;
+        height: 100%;
+
+        &__left {
+          margin-left: 0;
+          padding-right: 155px;
+          min-width: 598px;
+          width: 50%;
+          box-sizing: border-box;
+          margin-right: auto;
+          position: relative;
+          z-index: 10;
+          max-width: 730px;
+
+          &__white{
+            padding: 15px 0 90px 60px;
+            background-color: #fff;
+
+            h4{
+              margin-bottom: 20px;
+              font-size: 28px;
+
+              span{
+                font-family: 'Amiri', serif;
+                display: block;
+                font-size: 36px;
+                color: #e67e18;
+                line-height: 1;
+                font-style: italic;
+                font-weight: normal;
+                letter-spacing: -.1em;
+
+                em{
+                  margin-left: 0;
+                  font-size: 23px;
+                  color: #f5d1bb;
+                  letter-spacing: 0;
+                }
+              }
+            }
+
+            p{
+              font-size: 15px;
+              line-height: 2.15;
+            }
+
+            .button{
+              margin-top: 42px;
+
+              &__a{
+                width: 260px;
+                padding-left: 2em;
+                justify-content: flex-start;
+                color: #fff;
+                font-weight: normal;
+                font-size: 15px;
+                height: 66px;
+                z-index: 100;
+                overflow: hidden;
+                background: #188dc8;
+                border-radius: 3px;
+                display: inline-flex;
+                align-items: center;
+                text-decoration: none;
+                position: relative;
+                box-sizing: border-box;
+              }
+            }
+          }
+        }
       }
     }
   }
