@@ -19,7 +19,8 @@
 
   &__list{
     margin-top: 3.9em;
-
+    padding-inline-start: 0px;
+    
     // 右側のリスト
     .num_01 , .num_03{
       position: relative;
