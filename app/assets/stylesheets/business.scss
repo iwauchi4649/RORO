@@ -1,21 +1,28 @@
 .business{
 
-  &__title{
+  &__content{
+    background-image: url(business-image2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
 
-    h3{
-      text-align: center;
-      font-size: 2.8rem;
-      padding: 40px 0;
-      float: none;
+    &__title{
+
+      h3{
+        text-align: center;
+        font-size: 2.8rem;
+        padding: 40px 0;
+        float: none;
+      }
     }
-  }
 
-  &__description{
+    &__description{
 
-    p{
-      text-align: center;
-      font-size: 2.5rem;
-      font-weight: bold;
+      p{
+        text-align: center;
+        font-size: 2.5rem;
+        padding-bottom: 50px;
+        font-family: "AxisStd-Bold","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","游ゴシック",YuGothic,"メイリオ",Meiryo,Verdana,sans-serif;
+      }
     }
   }
 
