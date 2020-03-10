@@ -1,5 +1,11 @@
+.header
+  = render "review/partial/header"
+
+.business
+  - breadcrumb :company
+  = render "review/partial/title"
+
 .contact
-  %h2 CONTACT
   .contact__title
     %h2 お問い合わせ
   .contact__attention
@@ -14,7 +20,7 @@
     = render partial: 'error-messages', locals: {contact: @contact, column: "mail"}
     = render partial: 'error-messages', locals: {contact: @contact, column: "phone"}
     = render partial: 'error-messages', locals: {contact: @contact, column: "content"}
-    = form_with model: @contact, url: confirm_path,local: true do |f|
+    = form_with model: @contact, url: review_confirm_path,local: true do |f|
       .contact__pan__form-group
         = f.label :name ,"お名前" 
         %span.form-required  必須

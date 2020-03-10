@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'review/business' => 'review#business'
   get 'review/message' => 'review#message'
   get 'review/contact' => 'review#contact'
-  get  'contact' =>'review#contact'
-  post 'confirm' => 'review#confirm'
-  post 'done' => 'review#done'
+  get  'review/contact' =>'review#contact'
+  post 'review/confirm' => 'review#confirm'
+  post 'review/done' => 'review#done'
 end
