@@ -1,3 +1,15 @@
+@keyframes tooltipShow {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 .header{
   width: 100%;
   background: #fff;
@@ -56,6 +68,17 @@
                 position: absolute;
                 width: 100%;
                 text-align: center;
+                color: black;
+                opacity: 1;
+              }
+
+              .en{
+                top: 35%;
+                z-index: 100;
+                display: block;
+                position: absolute;
+                text-align: center;
+                width: 100%;
                 color: black;
               }
             }
