@@ -1,0 +1,12 @@
+.header
+  = render "review/partial/header"
+
+.business
+  - breadcrumb :company
+  = render "review/partial/title"
+  
+.done
+  %div
+    %h2 メッセージ送信完了
+    %p
+      メッセージをいただきありがとうございました。

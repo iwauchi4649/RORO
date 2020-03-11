@@ -46,7 +46,7 @@ body {
   
   &__title{
 
-    h2{
+    h3{
       text-align: center;
       font-size: 2.8rem;
       padding: 40px 0;
@@ -56,6 +56,7 @@ body {
   &__attention{
     p#attention{
       text-align: center;
+      font-size: 1.8rem;
     }
   }
   &__pan{
@@ -110,4 +111,8 @@ body {
 }
 #contact-content{
   height: 120px;
+}
+.done{
+  text-align: center;
+  margin: 7.1rem;
 }
