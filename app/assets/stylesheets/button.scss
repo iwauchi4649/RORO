@@ -1,0 +1,38 @@
+.button{
+  margin-top: 42px;
+
+  &__a{
+    box-shadow: 0 12px 0 rgba(0,0,0,.2);
+    transition: color .3s, background .3s, box-shadow .3s, transform .3s;
+    width: 260px;
+    padding-left: 2em;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: normal;
+    font-size: 15px;
+    height: 66px;
+    z-index: 100;
+    overflow: hidden;
+    background: #188dc8;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  &__a:hover{
+    background: #53bff5;
+    box-shadow: 0 3px 0 #188dc8, 0 6px 0 rgba(0,0,0,.2);
+    transform: translateY(3px);
+  }
+
+  &__a:active{
+    color: #ddd;
+    background: #188dc8;
+    box-shadow: 0 0 0 #188dc8, 0 0 0 rgba(0,0,0,.2);
+    transform: translateY(6px);
+    transition-duration: .1s;
+  }
+}
