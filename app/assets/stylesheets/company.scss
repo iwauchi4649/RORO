@@ -1,0 +1,12 @@
+.company{
+  &__top{
+    position: relative;
+    &__image{
+      padding: 0 1.5rem;
+      img{
+        width: 100%;
+        opacity: .8;
+      }
+    }
+  }
+}
