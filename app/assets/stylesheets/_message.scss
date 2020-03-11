@@ -1,49 +1,76 @@
-.message-l-contents{
-  word-break: normal;
-  word-wrap: break-word;
-  margin-bottom: 50px;
+@media screen and (min-width:1024px) {
+    /*pc用のcssを記述*/
+  .message-l-contents{
+    word-break: normal;
+    word-wrap: break-word;
+    margin-bottom: 50px;
 
-  &__main{
-    line-height: 180%;
+    &__main{
+      line-height: 180%;
 
-    &__conpany{
-      line-height: 2;
+      &__conpany{
+        line-height: 2;
 
-      section{
-        margin: 0 0 40px;
-      }
+        section{
+          margin: 0 0 40px;
+        }
 
-      &__greeting{
-        margin-bottom: 55px;
+        &__greeting{
 
-        &__container{
-          background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%), url("test.jpg") no-repeat left top;
-          background-size: cover;  
-          width: 1100px;
-          max-width: 1200px;
-          margin-right: auto;
-          margin-left: auto;
-          padding-left: 15px;
-          padding-right: 15px;
 
-          &__ceo-box{
-            margin: 80px 0 80px auto!important;
-            max-width: 570px;
+          &__container{
+            background:url("test4.jpg") no-repeat left top;
+            background-size: cover;
+            width: 1300px;
+            max-width: 1300px;
+            height: 700px;
+            margin-right: auto;
+            margin-left: auto;
 
-            h2 {
-              font-size: 3.6rem;
-              margin-bottom: 20px;
-              font-weight: 400;
-              font-family: "AxisStd-Bold","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","游ゴシック",YuGothic,"メイリオ",Meiryo,Verdana,sans-serif;
-            }
+            &__bg-mask {
+              height: 100%;
+              background: rgba(255,255,255,0.5);
 
-            p {
-              margin-bottom: 20px;
-            }
+              &__ceo-box{
+                margin: 40px 30px 80px auto!important;
+                max-width: 700px;
 
-            &__ceo-name{
-              text-align: right;
-              margin-bottom: 55px;
+                h2 {
+                  padding-top: 30px;
+                  font-size: 5.6rem;
+                  margin-bottom: 20px;
+                  font-family: "AxisStd-Bold","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","游ゴシック",YuGothic,"メイリオ",Meiryo,Verdana,sans-serif;
+                }
+
+                p {
+                  padding-top: 20px;
+                  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+                  letter-spacing: 0.4rem;
+                  margin-bottom: 40px;
+                  margin-right: 40px;
+                  font-size: 15px;
+                }
+
+                // .first {
+                //   font-size: 15px;
+                // }
+                // .second {
+                //   font-size: 15px;
+                // }
+                // .third {
+                //   font-size: 15px;
+                // }
+                // .four {
+                //   font-size: 15px;
+                // }
+
+                &__ceo-name{
+                  text-align: right;
+                  margin-bottom: 55px;
+                  font-size: 20px;
+                  font-weight: bold;
+                }
+              }
             }
           }
         }
