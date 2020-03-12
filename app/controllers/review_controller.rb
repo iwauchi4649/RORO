@@ -7,6 +7,10 @@ class ReviewController < ApplicationController
     @h2 = "COMPANY"
   end
 
+  def message
+    @h2 = "MESSAGE"
+  end
+
   def contact
     @h2 = "CONTACT"
     @contact = Contact.new
@@ -37,7 +41,4 @@ class ReviewController < ApplicationController
     params.require(:contact).permit(:name, :mail, :phone, :content)
   end
 
-  def message
-    @h2 = "MESSAGE"
-  end
 end
