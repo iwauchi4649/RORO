@@ -1,5 +1,5 @@
 crumb :root do
-  link "Home", root_path
+  link "HOME", root_path
 end
 
 # company

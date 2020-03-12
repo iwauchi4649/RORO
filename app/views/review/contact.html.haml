@@ -1,22 +1,29 @@
 .header
   = render "review/partial/header"
 
+.business
+  - breadcrumb :company
 .common
   - breadcrumb :contact
+
   = render "review/partial/title"
 
 .contact
   .contact__title
-    %h2 お問い合わせ
+    %h3 お問い合わせ
   .contact__attention
     %p#attention
       以下のフォームに必要事項をご記入の上、
       %br
-      「送信する」をクリックしてください。
+      「確認する」をクリックしてください。
       %br 
-        必須の付いている項目は必ず記入してください。　
+        必須の付いている項目は必ず記入してください。
   .contact__pan
-    = form_with model: @group, local: true do |f|
+    = render partial: 'error-messages', locals: {contact: @contact, column: "name"}
+    = render partial: 'error-messages', locals: {contact: @contact, column: "mail"}
+    = render partial: 'error-messages', locals: {contact: @contact, column: "phone"}
+    = render partial: 'error-messages', locals: {contact: @contact, column: "content"}
+    = form_with model: @contact, url: review_confirm_path,local: true do |f|
       .contact__pan__form-group
         = f.label :name ,"お名前" 
         %span.form-required  必須
@@ -26,7 +33,7 @@
         = f.label :mail ,"メールアドレス"
         %span.form-required  必須
         .contact__pan__form-group__text
-          = f.text_field :mail, class: 'form-control' , id: 'contact-mail', placeholder: ' roro@example.com'
+          = f.email_field :mail, class: 'form-control' , id: 'contact-mail', placeholder: ' roro@example.com'
       .contact__pan__form-group
         = f.label :phone ,'電話番号'
         %span.form-required  必須
@@ -37,5 +44,4 @@
         %span.form-required  必須
         .contact__pan__form-group__text
           = f.text_area :content, class: 'form-control' , id: 'contact-content', placeholder: ' お問い合わせ内容を記入してください。'
-          = f.submit '送信する', id:'submit-button'
-        %p プライバシーポリシーについて
+          = f.submit '確認', id:'submit-button'
