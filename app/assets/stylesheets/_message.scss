@@ -27,6 +27,14 @@
             margin-right: auto;
             margin-left: auto;
 
+            .hidden-lg {
+              display: none!important;
+
+              img {
+                
+              }
+            }
+
             &__bg-mask {
               height: 100%;
               background: rgba(255,255,255,0.5);
@@ -56,6 +64,69 @@
                   margin-bottom: 55px;
                   font-size: 20px;
                   font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:639px) {
+  /*スマホ用のcssを記述*/
+  .message-l-contents{
+
+
+    &__main{
+
+      &__conpany{
+
+        section{
+
+        }
+
+        &__greeting{
+
+
+          &__container{
+
+            .hidden-lg {
+              width: 500px;
+              margin-bottom: 20px;
+              margin-left: auto;
+              margin-right: auto;
+
+              img {
+                line-height: 1;
+                font-size: 0;
+                max-width: 100%;
+              }
+            }
+
+            &__bg-mask {
+
+              &__ceo-box{
+                width: 500px;
+                margin: 0 auto;
+
+                h2 {
+                  text-align: center;
+                  font-size: 2.6rem;
+                  margin-bottom: 20px;
+                  font-family: "AxisStd-Bold","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","游ゴシック",YuGothic,"メイリオ",Meiryo,Verdana,sans-serif;
+                }
+
+                p {
+                  margin-bottom: 20px;
+                  text-align: center;
+
+                }
+
+                &__ceo-name{
+                  text-align: right;
+
                 }
               }
             }
