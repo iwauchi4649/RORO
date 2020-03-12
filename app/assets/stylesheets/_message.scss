@@ -68,45 +68,6 @@
       }
     }
   }
-  // &__content{
-  //   margin-top: 5rem;
-  //   &__photos{
-  //     display: flex;
-  //     &__up{
-  //       display: flex;
-  //       img{
-  //         width: 50%;
-  //       }
-  //     }
-  //     &__down{
-  //       display: flex;
-  //       img{
-  //         width: 50%;
-  //       }
-  //     }
-  //   }
-  //   &__info{
-  //     ul{
-  //       margin-top: 5rem;
-  //     }
-  //     margin-top: 8rem;
-  //     text-align: center;
-  //     &__title{
-  //       font-family: 'Batang';
-  //       font-size: 3.8rem;
-  //       font-weight: bold;
-  //     }
-  //     &__list{
-  //       margin-top: 2.8rem;
-  //       border-bottom: 1px solid lightgray;
-  //       &__title{
-  //         text-align: left;
-  //         font-weight: bold;
-  //         width: 10rem;
-  //       }
-  //     }
-  //   }
-  // }
 }
 
 /*レスポンシブデザイン*/
@@ -133,51 +94,16 @@
       }
     }
   }
-  // .message__content{
-  //   &__info{
-  //     &__title{
-  //       font-size: 2.5rem;
-  //     }
-  //     &__list{
-  //       &__title{
-  //         font-size: 1.2rem;
-  //       }
-  //       &__detail{
-  //         font-size: 1.1rem;
-  //       }
-  //     }
-  //   }
-  // }
 }
 @media screen and (max-width:1024px) {
   .message__top__image__discription{
     display: none;
   }
-  // .message__content{
-  //   &__photos{
-  //     display: block;
-  //   }
-  //   &__info{
-  //     &__list{
-  //     }
-  //   }
-  // }
 }
 @media screen and (min-width:1025px) {
   .message__top__discription{
     display: none;
   }
-  // .message__content{
-  //   &__info{
-  //     padding: 0 12rem;
-  //     &__list{
-  //       display: flex;
-  //       &__detail{
-  //         margin-left: 20rem;
-  //       }
-  //     }
-  //   }
-  // }
 }
 
 
