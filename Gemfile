@@ -64,3 +64,5 @@ gem "haml-rails"
 gem "erb2haml"
 gem "gretel"
 gem 'dotenv-rails'
+gem 'recaptcha', require: "recaptcha/rails"
+gem 'rails-i18n'
