@@ -1,0 +1,179 @@
+.company{
+  padding: 0 1.5rem;
+  &__top{
+    &__image{
+      position: relative;
+      overflow: hidden;
+      img{
+        width: 100%;
+        opacity: .9;
+      }
+      &__discription{
+        position: absolute;
+        top: 12rem;
+        right: 8rem;
+        &__title{
+          span{
+            font-size: 3.2rem;
+            font-weight: bold;
+          }
+        }
+        &__president-name{
+          margin:4.2rem 0 0 40rem;
+          span{
+            font-size: 1.7rem;
+            font-weight: bold;
+          }
+        }
+        &__sentence{
+          color: #fff;
+          margin: 5.2rem 0 0 0rem;
+          p{
+            font-weight: 400;
+            line-height: 2.4rem;
+            font-size: 1.8rem;
+            font-family: serif;
+          }
+        }
+      }
+    }
+    &__discription{
+      margin-top: 4rem;
+      padding: 0 3rem;
+      text-align: center;
+      &__title{
+        span{
+          font-size: 3.5rem;
+          font-weight: bold;
+        }
+      }
+      &__president-name{
+        margin-top: 4.8rem;
+        span{
+          font-size: 1.7rem;
+          font-weight: bold;
+        }
+      }
+      &__sentence{
+        margin-top: 4.8rem;
+        p{
+          font-weight: 600;
+          line-height: 1.5rem;
+          font-size: 1.8rem;
+          font-family: serif;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+  &__content{
+    margin-top: 5rem;
+    &__photos{
+      display: flex;
+      &__up{
+        display: flex;
+        img{
+          width: 50%;
+        }
+      }
+      &__down{
+        display: flex;
+        img{
+          width: 50%;
+        }
+      }
+    }
+    &__info{
+      ul{
+        margin-top: 5rem;
+      }
+      margin-top: 8rem;
+      text-align: center;
+      &__title{
+        font-family: 'Batang';
+        font-size: 3.8rem;
+        font-weight: bold;
+      }
+      &__list{
+        margin-top: 2.8rem;
+        border-bottom: 1px solid lightgray;
+        &__title{
+          text-align: left;
+          font-weight: bold;
+          width: 10rem;
+        }
+      }
+    }
+  }
+}
+
+/*レスポンシブデザイン*/
+@media screen and (max-width:639px) {
+  .company{
+    padding: 0 1rem;
+  }
+  .company__top__discription{
+    &__title{
+      span{
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+    &__president-name{
+      span{
+        font-size: 1.3rem;
+      }
+    }
+    &__sentence{
+      p{
+        font-size: 1.2rem;
+        line-height: 1rem;
+      }
+    }
+  }
+  .company__content{
+    &__info{
+      &__title{
+        font-size: 2.5rem;
+      }
+      &__list{
+        &__title{
+          font-size: 1.2rem;
+        }
+        &__detail{
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:1024px) {
+  .company__top__image__discription{
+    display: none;
+  }
+  .company__content{
+    &__photos{
+      display: block;
+    }
+    &__info{
+      &__list{
+      }
+    }
+  }
+}
+@media screen and (min-width:1025px) {
+  .company__top__discription{
+    display: none;
+  }
+  .company__content{
+    &__info{
+      padding: 0 12rem;
+      &__list{
+        display: flex;
+        &__detail{
+          margin-left: 20rem;
+        }
+      }
+    }
+  }
+}

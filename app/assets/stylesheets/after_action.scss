@@ -1,0 +1,20 @@
+.header__container__bar__info__ul__li__hover .en{
+  display: none;
+  // 通常時はホバー時の英語を非表示にする
+}
+
+.header__container__bar__info__ul__li__hover:hover .jp{
+  display: none;
+  // ホバー時は通常時の日本語を非表示にする
+}
+
+.header__container__bar__info__ul__li__hover:hover .en{
+  animation: tooltipShow 0.3s linear 0s;
+  display: inline;
+  // ホバー時に、ホバー時の英語を表示する
+}
+
+.header__container__bar__info__ul__li__hover:hover{
+  background: #f2f2f2;
+  // hover時に背景色を変更する
+}
