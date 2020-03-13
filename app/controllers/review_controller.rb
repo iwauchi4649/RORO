@@ -28,7 +28,8 @@ class ReviewController < ApplicationController
 
   def done
   end
-  
+  def footer
+  end
   private
   def contact_params
     params.require(:contact).permit(:name, :mail, :phone, :content)
