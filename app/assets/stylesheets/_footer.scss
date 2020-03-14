@@ -27,7 +27,9 @@
     margin: auto;
     ul{
       display: flex;
-        li{
+        li a{
+          color: #ffffff;
+          text-decoration: none;
         }
         li:hover{
           opacity: 0.8;
