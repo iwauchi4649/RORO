@@ -17,6 +17,7 @@ class ReviewController < ApplicationController
   end
 
   def confirm
+    @h2 = "CONTACT"
     @contact = Contact.new(contact_params)
     if verify_recaptcha(model: @contact) && @contact.save
       ContactMailer.send_mail(@contact).deliver_now
@@ -27,6 +28,7 @@ class ReviewController < ApplicationController
   end
 
   def done
+    @h2 = "CONTACT"
   end
   private
   def contact_params
