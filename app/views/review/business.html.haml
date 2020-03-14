@@ -9,6 +9,20 @@
   = render "review/partial/title"
 
 .business
+  -# スマホ版
+  .business__image
+    = image_tag "business-image2.jpg"
+  .business__discription
+    .business__discription__title
+      %span 事業内容
+    .business__discription__text
+      %p 
+        購入から売却まですべてのプロセスに
+      %p
+        ご満足頂けるようトータルで
+      %p
+        サポートさせて頂きます。
+  -# PC版
   .business__content
     .business__content__title
       %h3 事業内容
@@ -18,7 +32,7 @@
       %p
         ご満足頂けるようトータルでサポートさせて頂きます。
   %ul.business__list
-    %li.num_01
+    %li.num_01{id:"num_01r"}
       .inner
         .inner__right
           .inner__right__white
@@ -30,7 +44,7 @@
               大阪市中心地に特化した弊社ならではの豊かな購入・売却ノウハウで完全サポート。正確な市場価格をお伝えし、お客様に最適なプランをご案内致します。
             .button
               = link_to "お問い合わせはこちら" ,review_contact_path , class: "button__a"
-    %li.num_02
+    %li.num_02{id:"num_02r"}
       .inner
         .inner__left
           .inner__left__white
@@ -39,12 +53,10 @@
                 %em TOWER CONSULTING
               タワーマンション売買
             %p
-              大阪市「北区・中央区・西区」の立地に特化した物件を
-              %br
-                ご提案致します。
+              大阪市「北区・中央区・西区」の立地に特化した物件をご提案致します。
             .button
               = link_to "お問い合わせはこちら" ,review_contact_path , class: "button__a"
-    %li.num_03
+    %li.num_03{id:"num_03r"}
       .inner
         .inner__right
           .inner__right__white
@@ -53,12 +65,9 @@
                 %em NEW APARTMENT MANAGMENT
               新築アパート経営
             %p
-              アパート経営を始めるにあたり、最も重要なポイントは
+              アパート経営を始めるにあたり、最も重要なポイントは「立地条件」です。
               %br
-              「立地条件」です。
-              %br
-                弊社では地元や大手の不動産会社と連携し良質な物件を
-              お客様にお届けします。
+                弊社では地元や大手の不動産会社と連携し良質な物件をお客様にお届けします。
             .button
               = link_to "お問い合わせはこちら" ,review_contact_path , class: "button__a"
 = render "review/partial/footer"
