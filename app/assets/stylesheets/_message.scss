@@ -74,6 +74,16 @@
 @media screen and (max-width:639px) {
   .message{
     padding: 0 1rem;
+
+    &__top{
+
+      &__image{
+
+        img {
+          height: 20rem;
+        }
+      }
+    }
   }
   .message__top__discription{
     &__title{
