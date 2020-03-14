@@ -44,6 +44,6 @@
         %span.form-required  必須
         .contact__pan__form-group__text
           = f.text_area :content, class: 'form-control' , id: 'contact-content', placeholder: ' お問い合わせ内容を記入してください。'
-          =recaptcha_tags 
+          -# = recaptcha_tags 
           = f.submit '送信する', id:'submit-button',data: { confirm: 'メッセージを送信してよろしいですか。' }
    
