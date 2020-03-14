@@ -58,7 +58,7 @@
         transition: all .3s ease;
       }
 
-      &__bottun::after{
+      &__bottun:after{
         content: "";
         top: 40px;
         height: 2px;
@@ -69,6 +69,53 @@
         -webkit-transition: all .3s ease;
         transition: all .3s ease;
       }
+
+      &__bottun.act{
+        display: inline-block;
+        -webkit-transition: all .4s ease;
+        transition: all .4s ease;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background: #211a18;
+        color: #fff;
+
+        span{
+          display: none;
+        }
+      }
+
+      &__bottun.act:before{
+        content: "";
+        height: 2px;
+        width: 30px;
+        position: absolute;
+        left: 15px;
+        background-color: #fff;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+        -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        transform: rotate(135deg);
+        top: 30px;
+        background: #fff;
+      }
+
+      &__bottun.act:after{
+        content: "";
+        height: 2px;
+        width: 30px;
+        position: absolute;
+        left: 15px;
+        background-color: #fff;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+        -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+        top: 30px;
+        background: #fff;
+      }
+      
 
       &__logo{
         position: absolute;
@@ -147,10 +194,16 @@
             color: #fff;
             display: block;
             text-align: center;
+            text-decoration: none;
           }
         }
       }
     }
+  }
+  .menu.act{
+    opacity: 1;
+    top: 60px;
+    z-index: 100000;
   }
 }
 
@@ -171,7 +224,6 @@
     display: none;
   }
 }
-
 
 // PCフルスクリーン時
 @keyframes tooltipShow {

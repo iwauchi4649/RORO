@@ -66,3 +66,5 @@ gem "gretel"
 gem 'dotenv-rails'
 gem 'recaptcha', require: "recaptcha/rails"
 gem 'rails-i18n'
+gem "jquery-rails"
+gem 'jquery-turbolinks'
