@@ -180,13 +180,12 @@
         margin-bottom: 20px;
         margin-block-start: 0em;
         padding-inline-start:0em;
+        background: #211a18;
 
         &__li{
           line-height: 1.8;
           position: relative;
-          border-radius: 1px;
-          border-bottom: 1px solid #5f4e49;
-          background: #211a18;
+          
 
           &__a{
             font-size: 1.4rem;
@@ -195,6 +194,8 @@
             display: block;
             text-align: center;
             text-decoration: none;
+            border-radius: 1px;
+            border-bottom: 1px solid #5f4e49;
           }
         }
       }
