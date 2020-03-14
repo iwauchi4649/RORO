@@ -1,14 +1,13 @@
----
 ja:
   activerecord:
       models:
         contact: コンタクト
-        attributes:
-          contact:
-            name: 名前
-            phone: 電話番号
-            content: お問い合わせ内容
-            mail: メールアドレス
+      attributes:
+        contact:
+          name: 名前
+          phone: 電話番号
+          content: お問い合わせ内容
+          mail: メールアドレス
         errors:
       messages:
         record_invalid: 'バリデーションに失敗しました: %{errors}'

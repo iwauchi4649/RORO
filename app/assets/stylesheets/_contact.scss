@@ -60,8 +60,16 @@ body {
     }
   }
   &__pan{
+    .error{
+      ul{
+        padding: 0;
+      }
+    }
     text-align: -webkit-center;
     &__form-group{
+      .g-recaptcha{
+        margin-top: 2.8rem;
+      }
       display: table-caption;
       padding: 8px 0 ;
       label{
