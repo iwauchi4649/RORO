@@ -1,67 +1,120 @@
-@media screen and (min-width:1024px) {
-    /*pc用のcssを記述*/
-  .message-l-contents{
-    word-break: normal;
-    word-wrap: break-word;
-    margin-bottom: 50px;
-
-    &__main{
-      line-height: 180%;
-
-      &__conpany{
-        line-height: 2;
-
-        section{
-          margin: 0 0 40px;
-        }
-
-        &__greeting{
-
-
-          &__container{
-            background:url("test4.jpg") no-repeat left top;
-            background-size: cover;
-            width: 1300px;
-            max-width: 1300px;
-            height: 700px;
-            margin-right: auto;
-            margin-left: auto;
-
-            &__bg-mask {
-              height: 100%;
-              background: rgba(255,255,255,0.5);
-
-              &__ceo-box{
-                margin: 40px 30px 80px auto!important;
-                max-width: 700px;
-
-                h2 {
-                  padding-top: 30px;
-                  font-size: 5.6rem;
-                  margin-bottom: 20px;
-                  font-family: "AxisStd-Bold","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","游ゴシック",YuGothic,"メイリオ",Meiryo,Verdana,sans-serif;
-                }
-
-                p {
-                  padding-top: 20px;
-                  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
-                  letter-spacing: 0.4rem;
-                  margin-bottom: 40px;
-                  margin-right: 90px;
-                  font-size: 15px;
-                }
-
-                &__ceo-name{
-                  text-align: right;
-                  margin-bottom: 55px;
-                  font-size: 20px;
-                  font-weight: bold;
-                }
-              }
-            }
+.message{
+  padding: 0 1.5rem;
+  &__top{
+    &__image{
+      position: relative;
+      overflow: hidden;
+      img{
+        width: 100%;
+        height: 80rem;
+        opacity: .6;
+      }
+      &__discription{
+        position: absolute;
+        top: 12rem;
+        right: 8rem;
+        left:70rem;
+        &__title{
+          span{
+            font-size: 3.6rem;
+            font-weight: bold;
           }
+        }
+        &__president-name{
+          margin:4.2rem 0 0 23rem;
+          span{
+            font-size: 1.7rem;
+            font-weight: bold;
+          }
+        }
+        &__sentence{
+          margin: 5.2rem 7rem 0 0rem;
+          p{
+            font-weight: 400;
+            line-height: 2.4rem;
+            font-size: 1.8rem;
+            font-family: serif;
+            margin-bottom: 5rem;
+          }
+        }
+      }
+    }
+    &__discription{
+      margin-top: 4rem;
+      padding: 0 3rem;
+      text-align: center;
+      &__title{
+        span{
+          font-size: 3.5rem;
+          font-weight: bold;
+        }
+      }
+      &__president-name{
+        margin-top: 4.8rem;
+        span{
+          font-size: 1.7rem;
+          font-weight: bold;
+        }
+      }
+      &__sentence{
+        margin-top: 4.8rem;
+        p{
+          font-weight: 600;
+          line-height: 1.5rem;
+          font-size: 1.8rem;
+          font-family: serif;
+          font-weight: normal;
         }
       }
     }
   }
 }
+
+/*レスポンシブデザイン*/
+@media screen and (max-width:639px) {
+  .message{
+    padding: 0 1rem;
+
+    &__top{
+
+      &__image{
+
+        img {
+          height: 20rem;
+        }
+      }
+    }
+  }
+  .message__top__discription{
+    &__title{
+      span{
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+    &__president-name{
+      span{
+        font-size: 1.3rem;
+      }
+    }
+    &__sentence{
+      p{
+        font-size: 1.2rem;
+        line-height: 1rem;
+      }
+    }
+  }
+}
+@media screen and (max-width:1024px) {
+  .message__top__image__discription{
+    display: none;
+  }
+}
+@media screen and (min-width:1025px) {
+  .message__top__discription{
+    display: none;
+  }
+}
+
+
+
