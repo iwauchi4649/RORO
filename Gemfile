@@ -66,5 +66,7 @@ gem "gretel"
 gem 'dotenv-rails'
 gem 'recaptcha', require: "recaptcha/rails"
 gem 'rails-i18n'
+gem "jquery-rails"
+gem 'jquery-turbolinks'
 gem 'font-awesome-sass', '~> 5.4.1'
 gem 'font-awesome-rails'

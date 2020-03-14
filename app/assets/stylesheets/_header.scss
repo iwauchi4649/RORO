@@ -1,3 +1,232 @@
+/*====================
+スマホを基本設計にする
+- 〜479px：スマートフォン縦
+- 480px〜599px：スマートフォン横
+- 600px〜959px：タブレット
+- 960px〜1279px：小型PC
+- 1280px〜：大型PC
+====================*/
+@media screen and (max-width:960px) {
+  /*スマホ用のcssを記述*/
+  .header{
+    top: 0;
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    top: -100px;
+    left: 0;
+    z-index: 10000;
+    -webkit-transition: all .3s cubic-bezier(.165,.84,.44,1);
+    transition: all .3s cubic-bezier(.165,.84,.44,1);
+    padding: 0;
+
+    &__trigger , &__trigger__bottun{
+      width: 60px;
+      height: 60px;
+
+      &__bottun{
+        display: inline-block;
+        -webkit-transition: all .4s ease;
+        transition: all .4s ease;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background: #211a18;
+        color: #fff;
+
+        span{
+          text-indent: -9999px;
+          top: 30px;
+          height: 2px;
+          width: 30px;
+          position: absolute;
+          left: 15px;
+          background-color: #fff;
+          -webkit-transition: all .3s ease;
+          transition: all .3s ease;
+        }
+      }
+
+      &__bottun:before{
+        content: "";
+        top: 20px;
+        height: 2px;
+        width: 30px;
+        position: absolute;
+        left: 15px;
+        background-color: #fff;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+      }
+
+      &__bottun:after{
+        content: "";
+        top: 40px;
+        height: 2px;
+        width: 30px;
+        position: absolute;
+        left: 15px;
+        background-color: #fff;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+      }
+
+      &__bottun.act{
+        display: inline-block;
+        -webkit-transition: all .4s ease;
+        transition: all .4s ease;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background: #211a18;
+        color: #fff;
+
+        span{
+          display: none;
+        }
+      }
+
+      &__bottun.act:before{
+        content: "";
+        height: 2px;
+        width: 30px;
+        position: absolute;
+        left: 15px;
+        background-color: #fff;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+        -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        transform: rotate(135deg);
+        top: 30px;
+        background: #fff;
+      }
+
+      &__bottun.act:after{
+        content: "";
+        height: 2px;
+        width: 30px;
+        position: absolute;
+        left: 15px;
+        background-color: #fff;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+        -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+        top: 30px;
+        background: #fff;
+      }
+      
+
+      &__logo{
+        position: absolute;
+        width: 150px;
+        top: 8px;
+        left: 50%;
+        margin-left: -70px;
+        margin-top: 0;
+      }
+
+      &__contact-btn{
+        position: absolute;
+        right: 15px;
+        top: 14px;
+
+        &__icon{
+          font-family: 'Material Icons';
+          font-size: 3.5rem;
+          font-weight: normal;
+          font-style: normal;
+          line-height: 1;
+          letter-spacing: normal;
+          text-transform: none;
+          display: inline-block;
+          white-space: nowrap;
+          word-wrap: normal;
+          direction: ltr;
+          -webkit-font-feature-settings: 'liga';
+          -webkit-font-smoothing: antialiased;
+          color: black;
+        }
+      }
+    }
+
+    &__container{
+      display: none;
+    }
+  }
+  .menu{
+    opacity: 0;
+    top: 60px;
+    z-index: 100000;
+    -webkit-overflow-scrolling: touch;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    width: 100%;
+    z-index: -1;
+    -webkit-transition: all .3s cubic-bezier(.165,.84,.44,1);
+    transition: all .3s cubic-bezier(.165,.84,.44,1);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+
+    &__in{
+      height: 626px;
+
+      &__ul{
+        height: auto;
+        padding: 12% auto;
+        margin-bottom: 20px;
+        margin-block-start: 0em;
+        padding-inline-start:0em;
+        background: #211a18;
+
+        &__li{
+          line-height: 1.8;
+          position: relative;
+          
+
+          &__a{
+            font-size: 1.4rem;
+            padding: 20px 10px 20px 20px;
+            color: #fff;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 1px;
+            border-bottom: 1px solid #5f4e49;
+          }
+        }
+      }
+    }
+  }
+  .menu.act{
+    opacity: 1;
+    top: 60px;
+    z-index: 100000;
+  }
+}
+
+@media screen and (min-width:961px) {
+  .header__trigger{
+    display:none;
+  }
+  .menu{
+    display: none;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .header__trigger{
+    display:none;
+  }
+  .menu{
+    display: none;
+  }
+}
+
+// PCフルスクリーン時
 @keyframes tooltipShow {
   from {
     opacity: 0;
@@ -17,7 +246,6 @@
   left: 0;
   z-index: 10000;
   transition: all .3s cubic-bezier(.165,.84,.44,1);
-
   opacity: 1;
   top: 0;
 

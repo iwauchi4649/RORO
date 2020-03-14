@@ -1,9 +1,19 @@
+-# ハンバーガーメニュー
 .header__trigger
+  .header__trigger__bottun
+    %span
+  .header__trigger__logo
+    = link_to root_path do
+      = image_tag "ROROカンパニー.svg" , size:"150x45"
+  = link_to review_contact_path , class: "header__trigger__contact-btn" do
+    %i.header__trigger__contact-btn__icon mail_outline
+
+-# pc時
 .header__container
   .header__container__bar
     %h1.header__container__bar__logo
       = link_to root_path do
-        = image_tag "RORO-g.svg" , size:"150x45"
+        = image_tag "ROROカンパニー.svg" , size:"150x45"
     .header__container__bar__info
       %ul.header__container__bar__info__ul
         %li.header__container__bar__info__ul__li
