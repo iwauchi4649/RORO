@@ -6,17 +6,30 @@
   = render "review/partial/title"
 
 
-.message-l-contents
-  .message-l-contents__main
-    %article.message-l-contents__main__conpany
-      %section.message-l-contents__main__conpany__greeting
-        .message-l-contents__main__conpany__greeting__container
-          .message-l-contents__main__conpany__greeting__container__bg-mask
-            .message-l-contents__main__conpany__greeting__container__bg-mask__ceo-box
-              %h2 代表者挨拶
-              %p 弊社は「不動産投資は王道の選択のみ」
-              %p という経営理念のもと、2019年に会社を創業しました。
-              %p お客様がより良い不動産投資の選択をできるよう精一杯精進致します。
-              %p.message-l-contents__main__conpany__greeting__container__bg-mask__ceo-box__ceo-name
-                代表取締役 須田　英明
+.message
+  .message__top
+    .message__top__image
+      = image_tag "test4.jpg", class: "message_image"
+      .message__top__image__discription
+        .message__top__image__discription__title
+          %span 代表者挨拶
+        .message__top__image__discription__sentence
+          %p 弊社は「不動産投資は王道の選択のみ」
+          %p という経営理念のもと、2019年に会社を創業しました。
+          %p お客様がより良い不動産投資の選択をできるよう
+          %p 精一杯精進致します。
+        .message__top__image__discription__president-name
+          %span 代表取締役　　須田　英明
 
+
+    .message__top__discription
+      .message__top__discription__title
+        %span 代表者挨拶
+      .message__top__discription__sentence
+        %p 弊社は「不動産投資は王道の選択のみ」
+        %p という経営理念のもと、
+        %p 2019年に会社を創業しました。
+        %p お客様がより良い不動産投資の選択をできるよう
+        %p 精一杯精進致します。
+        .message__top__discription__president-name
+          %span 代表取締役　　須田　英明
