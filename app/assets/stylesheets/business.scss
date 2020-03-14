@@ -5,23 +5,14 @@
     background-repeat: no-repeat;
     background-size:cover;
 
-    &__title{
-
-      h3{
-        text-align: center;
-        font-size: 2.8rem;
-        padding: 40px 0;
-        float: none;
-      }
-    }
-
     &__description{
-
+      padding-bottom: 50px;
+      
       p{
         text-align: center;
-        font-size: 2.5rem;
-        padding-bottom: 50px;
-        font-family: "AxisStd-Bold","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","游ゴシック",YuGothic,"メイリオ",Meiryo,Verdana,sans-serif;
+        line-height: 2.4rem;
+        font-size: 1.8rem;
+        font-family: serif;
       }
     }
   }
