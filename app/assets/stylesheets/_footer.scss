@@ -1,0 +1,100 @@
+@media screen and (max-width:639px) {
+  /*スマホ用のcssを記述*/
+  .footer__nav{
+    display: none;
+  }
+  .footer__company{
+    text-align: center;
+    i{
+      color: #ffffff;
+      font-size: 3em;
+    }
+  }
+}
+@media screen and (max-width:1023px) {
+  .footer__nav{
+    display: none;
+  }
+}
+@media screen and (min-width:1024px) {
+  /*pc用のcssを記述*/
+  
+}
+.footer{
+  background-color: #181818;
+  color: #ffffff;
+  display: flex;
+  padding: 10px;
+  &__nav{
+    margin: auto;
+    ul{
+      display: flex;
+        li a{
+          color: #ffffff;
+          text-decoration: none;
+        }
+        li:hover{
+          opacity: 0.8;
+        }
+        li:not(:last-child):after{ 
+          content:':';
+          padding: 0.1em 1em ;
+        }
+    }
+  }
+  &__company{
+    text-align: center;
+    margin: auto;
+  }
+
+.insta_btn {
+      display: inline-block;
+      text-align: center;/*中央揃え*/
+      padding: 10px;
+      color: #2e6ca5;/*文字色*/
+      font-size: 20px;/*文字サイズ*/
+      text-decoration: none;/*下線消す*/
+    }
+    
+    .insta_btn:hover {/*ホバー時*/
+      color:#668ad8;/*文字色*/
+      transition: .5s;/*ゆっくり変化*/
+    }
+    
+    .insta_btn .insta{/*アイコンの背景*/
+      position: relative;/*相対配置*/
+      display: inline-block;
+      width: 50px;/*幅*/
+      height: 50px;/*高さ*/
+      background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+      background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
+      overflow: hidden;/*はみ出た部分を隠す*/
+      border-radius: 13px;/*角丸に*/
+    
+    }
+    
+    .insta_btn .insta:before{/*グラデーションを重ねるため*/
+      content: '';
+      position: absolute;/*絶対配置*/
+      top: 23px;/*ずらす*/
+      left: -18px;/*ずらす*/
+      width: 60px;/*グラデーションカバーの幅*/
+      height: 60px;/*グラデーションカバーの高さ*/
+      background: -webkit-radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+      background: radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);/*グラデーション②*/
+    }
+    
+    .insta_btn .fa-instagram {/*アイコン*/
+      color: #FFF;/*白に*/
+      position: relative;/*z-indexを使うため*/
+      z-index: 2;/*グラデーションより前に*/
+      font-size: 35px;/*アイコンサイズ*/
+      line-height: 50px;/*高さと合わせる*/
+    }
+    &__inc{
+      background-color: #ffffff;
+      color: black;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
