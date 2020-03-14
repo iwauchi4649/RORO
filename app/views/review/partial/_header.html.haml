@@ -1,4 +1,11 @@
 .header__trigger
+  .header__trigger__bottun
+    %span
+  .header__trigger__logo
+    = link_to root_path do
+      = image_tag "ROROカンパニー.svg" , size:"150x45"
+  = link_to review_contact_path , class: "header__trigger__contact-btn" do
+    %i.header__trigger__contact-btn__icon mail_outline
 
 .header__container
   .header__container__bar
