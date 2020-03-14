@@ -1,0 +1,36 @@
+.footer
+  .footer__company
+    .footer__company__name
+      %p 
+        株式会社RORO
+      %a.insta_btn{href: "#"}
+        %span.insta
+          %i.fa.fa-instagram
+    .footer__company__address
+      %p
+        〒550-0014 大阪府大阪市西区北堀江 
+      %p
+        1丁目17−10 クレオ北堀江 302
+      %p
+        (TEL) 080-1469-9754 (FAX) 06-6684-9654
+      %p
+        (E-MAIL) hideakisuda.5800@gmail.com
+    .button
+      .button__a お問い合わせ
+  .footer__nav
+    %ul.not_test
+      %li
+        = link_to review_company_path do
+          %span.jp 会社概要
+      %li 
+        = link_to review_business_path do
+          %span.jp 事業内容
+      %li 
+        = link_to review_message_path do
+          %span.jp 代表挨拶
+      %li 
+        = link_to review_contact_path do
+          %span.jp お問い合わせ
+.footer__inc
+  © 2020 RORO
+
