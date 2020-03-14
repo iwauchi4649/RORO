@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   get 'review/message' => 'review#message'
   get 'review/contact' => 'review#contact'
   get  'review/contact' =>'review#contact'
-  get  'review/footer' =>'review#footer'
   post 'review/confirm' => 'review#confirm'
   post 'review/done' => 'review#done'
 end
