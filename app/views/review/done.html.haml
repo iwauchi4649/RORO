@@ -1,8 +1,14 @@
+:javascript
+  window.onload = addToNewUrl();
+
 .header
   = render "review/partial/header"
 
 .business
   - breadcrumb :company
+.common
+  - breadcrumb :contact
+  
   = render "review/partial/title"
   
 .done
