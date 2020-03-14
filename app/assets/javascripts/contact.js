@@ -7,5 +7,4 @@ function addToNewUrl() {
 
   // URLを変更
   history.replaceState('', '', `/review/contact`)
-  console.log(1)
 }
