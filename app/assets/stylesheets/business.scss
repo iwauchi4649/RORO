@@ -158,7 +158,39 @@
     }
     
     &__discription{
+      margin-top: 4rem;
+      padding: 0 0.9rem;
+      text-align: center;
+
+      &__title{
+
+        span{
+          font-size: 3.5rem;
+          font-weight: bold;
+        }
+      }
+
+      &__text{
+        margin-top: 4.8rem;
+
+        p{
+          line-height: 1.5rem;
+          font-size: 1.8rem;
+          font-family: serif;
+          font-weight: normal;
+        }
+      }
+    }
+
+    &__content{
       display: none;
+    }
+  }
+  .num_02{
+    .inner__left__white{
+      p{
+        padding-right: 2rem;
+      }
     }
   }
 }
