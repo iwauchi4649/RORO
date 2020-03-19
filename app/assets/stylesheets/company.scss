@@ -12,7 +12,7 @@
       overflow: hidden;
       img{
         width: 100%;
-        opacity: .9;
+        opacity: .8;
       }
       &__discription{
         position: absolute;
@@ -171,6 +171,14 @@
   .company__top__discription{
     display: none;
   }
+
+  .company__top__image{
+    
+    img{
+      height: 450px;
+    }
+  }
+
   .company__content{
     &__info{
       padding: 0 12rem;
