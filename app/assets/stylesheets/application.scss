@@ -1,15 +1,19 @@
-@import "./reset";  /* _reset.scssを読み込む */
-@import "./header";
+@import "./partial/reset";  /* _reset.scssを読み込む */
+@import "./partial/header";
+@import "./partial/button";
+@import "./partial/footer";
+@import "./partial/title";
+
+@import "./action/before_action.scss";
+@import "./action/after_action.scss";
+
 @import "./contact";
-@import "./title";
 @import "./business";
 @import "./company";
 @import "./message";
-@import "./before_action.scss";
-@import "./after_action.scss";
-@import "./confirm";
-@import "./error";
-@import "./button";
-@import "./footer";
+
+@import "./mail/confirm";
+@import "./mail/error";
+
 @import "font-awesome-sprockets";
 @import "font-awesome";
