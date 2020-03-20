@@ -1,24 +1,33 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- 株式会社RORO様より受注し、制作いたしました。
+- 背景としては、クライアントはホームページを所有しておらず、顧客の信頼に繋げるために作成を希望されました。
 
-Things you may want to cover:
+## アプリケーション概要
 
-* Ruby version
+- 株式会社RORO様の静的なホームページ
 
-* System dependencies
 
-* Configuration
+## アプリケーションの機能一覧
 
-* Database creation
+- パンくず表示機能
+- お問い合わせ機能
 
-* Database initialization
 
-* How to run the test suite
+## アプリケーション内で使用している技術一覧
+|種別|名称|
+|------|----|
+|開発言語|Ruby(ver 2.5.1)|
+|フレームワーク|Ruby on Rails(ver 5.0.7.2)|
+|マークアップ|HTML(Haml),CSS(Sass)|
+|フロントエンド|JavaScript(jQuery)|
+|DB|MySQL|
+|本番環境|さくらVPS|
+|自動デプロイ|capistrano|
+|ロボット判定機能|reCAPTCHA|
+|パンくず表示機能|gretel|
+|お問い合わせ機能|rails-i18n|
 
-* Services (job queues, cache servers, search engines, etc.)
+## データベース
 
-* Deployment instructions
-
-* ...
+- 静的なページのため、なし
