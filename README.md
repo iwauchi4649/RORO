@@ -38,8 +38,7 @@
 |会社概要|
 |![PC用　会社概要](https://user-images.githubusercontent.com/54714018/77215990-a6546980-6b5a-11ea-9b50-80fb5d279f35.png)|![スマホ用　会社概要](https://user-images.githubusercontent.com/54714018/77215998-abb1b400-6b5a-11ea-8f0f-f8b45fad50f8.png)|
 |事業内容|
-|![PC用　事業内容](https://user-images.githubusercontent.com/54714018/77215994-a94f5a00-6b5a-11ea-9ae5-b3d5e9f58e80.png)|
-![スマホ用　事業内容](https://user-images.githubusercontent.com/54714018/77215999-ac4a4a80-6b5a-11ea-9d33-b65e2eae3f4b.png)|
+|![PC用　事業内容](https://user-images.githubusercontent.com/54714018/77215994-a94f5a00-6b5a-11ea-9ae5-b3d5e9f58e80.png)|![スマホ用　事業内容](https://user-images.githubusercontent.com/54714018/77215999-ac4a4a80-6b5a-11ea-9d33-b65e2eae3f4b.png)|
 |代表者挨拶|
 |![PC用　代表者挨拶](https://user-images.githubusercontent.com/54714018/77215996-aa808700-6b5a-11ea-92ae-5080a07aef3c.png)|![スマホ用　代表者挨拶](https://user-images.githubusercontent.com/54714018/77216000-ace2e100-6b5a-11ea-8558-3712896ac3ac.png)|
 |お問い合わせ|
