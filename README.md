@@ -32,13 +32,15 @@
 
 - 静的なページのため、なし
 
-## ページ
-![screencapture-localhost-3000-2020-03-21-09_31_09](https://user-images.githubusercontent.com/54714018/77215327-d863cc80-6b56-11ea-8d16-81c1cb71a8b6.png)
-![screencapture-localhost-3000-review-business-2020-03-21-09_32_34](https://user-images.githubusercontent.com/54714018/77215432-62ac3080-6b57-11ea-92cd-f7c5b41500a8.png)
-![screencapture-localhost-3000-review-business-2020-03-21-09_34_56](https://user-images.githubusercontent.com/54714018/77215439-6f308900-6b57-11ea-90a9-4765bbda720f.png)
-![screencapture-localhost-3000-review-company-2020-03-21-09_34_31](https://user-images.githubusercontent.com/54714018/77215449-75bf0080-6b57-11ea-8da5-159cb6821752.png)
-![screencapture-localhost-3000-review-contact-2020-03-21-09_33_23](https://user-images.githubusercontent.com/54714018/77215450-76f02d80-6b57-11ea-94ce-2cf97c5419a2.png)
-![screencapture-localhost-3000-review-contact-2020-03-21-09_34_15](https://user-images.githubusercontent.com/54714018/77215451-7788c400-6b57-11ea-96f5-cde38cc1b544.png)
-![screencapture-localhost-3000-review-message-2020-03-21-09_33_08](https://user-images.githubusercontent.com/54714018/77215452-7788c400-6b57-11ea-8b0e-ae49b69f1797.png)
-![screencapture-localhost-3000-review-message-2020-03-21-09_35_18](https://user-images.githubusercontent.com/54714018/77215453-78b9f100-6b57-11ea-9ace-7dffe01a95f3.png)
-
+## Webページ
+|PC用|スマートフォン用|
+|---|---|
+|会社概要|
+|![PC用　会社概要](https://user-images.githubusercontent.com/54714018/77215990-a6546980-6b5a-11ea-9b50-80fb5d279f35.png)|![スマホ用　会社概要](https://user-images.githubusercontent.com/54714018/77215998-abb1b400-6b5a-11ea-8f0f-f8b45fad50f8.png)|
+|事業内容|
+|![PC用　事業内容](https://user-images.githubusercontent.com/54714018/77215994-a94f5a00-6b5a-11ea-9ae5-b3d5e9f58e80.png)|
+![スマホ用　事業内容](https://user-images.githubusercontent.com/54714018/77215999-ac4a4a80-6b5a-11ea-9d33-b65e2eae3f4b.png)|
+|代表者挨拶|
+|![PC用　代表者挨拶](https://user-images.githubusercontent.com/54714018/77215996-aa808700-6b5a-11ea-92ae-5080a07aef3c.png)|![スマホ用　代表者挨拶](https://user-images.githubusercontent.com/54714018/77216000-ace2e100-6b5a-11ea-8558-3712896ac3ac.png)|
+|お問い合わせ|
+|![PC用　お問い合わせ](https://user-images.githubusercontent.com/54714018/77215984-a18fb580-6b5a-11ea-9f93-47af11c47f7f.png)|![スマホ用　お問い合わせ](https://user-images.githubusercontent.com/54714018/77215997-abb1b400-6b5a-11ea-9e65-45c52d0006f3.png)|
