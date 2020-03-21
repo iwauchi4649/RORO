@@ -33,3 +33,12 @@
 - 静的なページのため、なし
 
 ## ページ
+![screencapture-localhost-3000-2020-03-21-09_31_09](https://user-images.githubusercontent.com/54714018/77215327-d863cc80-6b56-11ea-8d16-81c1cb71a8b6.png)
+![screencapture-localhost-3000-review-business-2020-03-21-09_32_34](https://user-images.githubusercontent.com/54714018/77215432-62ac3080-6b57-11ea-92cd-f7c5b41500a8.png)
+![screencapture-localhost-3000-review-business-2020-03-21-09_34_56](https://user-images.githubusercontent.com/54714018/77215439-6f308900-6b57-11ea-90a9-4765bbda720f.png)
+![screencapture-localhost-3000-review-company-2020-03-21-09_34_31](https://user-images.githubusercontent.com/54714018/77215449-75bf0080-6b57-11ea-8da5-159cb6821752.png)
+![screencapture-localhost-3000-review-contact-2020-03-21-09_33_23](https://user-images.githubusercontent.com/54714018/77215450-76f02d80-6b57-11ea-94ce-2cf97c5419a2.png)
+![screencapture-localhost-3000-review-contact-2020-03-21-09_34_15](https://user-images.githubusercontent.com/54714018/77215451-7788c400-6b57-11ea-96f5-cde38cc1b544.png)
+![screencapture-localhost-3000-review-message-2020-03-21-09_33_08](https://user-images.githubusercontent.com/54714018/77215452-7788c400-6b57-11ea-8b0e-ae49b69f1797.png)
+![screencapture-localhost-3000-review-message-2020-03-21-09_35_18](https://user-images.githubusercontent.com/54714018/77215453-78b9f100-6b57-11ea-9ace-7dffe01a95f3.png)
+
