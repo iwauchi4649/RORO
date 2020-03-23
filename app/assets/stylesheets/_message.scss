@@ -47,8 +47,9 @@
       flex-wrap: wrap;
 
       &__left{
-        width: 48%;
+        width: 42%;
         margin-right: 2%;
+        margin-left: 6%;
       }
 
       &__right{
@@ -84,7 +85,7 @@
 
 @media screen and (max-width: 639px){
   .message__box__right__sentence{
-    
+
     p{
       font-size: 1.25rem;
       line-height: 0;
