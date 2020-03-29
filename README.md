@@ -36,7 +36,7 @@
 |PC用|スマートフォン用|
 |---|---|
 |会社概要|
-|![PC用　会社概要](https://user-images.githubusercontent.com/54468465/77851803-02cc1e80-7216-11ea-82b4-de179ac76aae.png)|![スマホ用　会社概要](https://user-images.githubusercontent.com/54714018/77215998-abb1b400-6b5a-11ea-8f0f-f8b45fad50f8.png)|
+|![PC用　会社概要](https://user-images.githubusercontent.com/54468465/77851803-02cc1e80-7216-11ea-82b4-de179ac76aae.png)|![スマホ用　会社概要](https://user-images.githubusercontent.com/54468465/77851854-42930600-7216-11ea-9e79-cce0e21d39ce.png)|
 |事業内容|
 |![PC用　事業内容](https://user-images.githubusercontent.com/54714018/77215994-a94f5a00-6b5a-11ea-9ae5-b3d5e9f58e80.png)|![スマホ用　事業内容](https://user-images.githubusercontent.com/54714018/77215999-ac4a4a80-6b5a-11ea-9d33-b65e2eae3f4b.png)|
 |代表者挨拶|
