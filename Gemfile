@@ -71,6 +71,8 @@ gem 'jquery-turbolinks'
 gem 'font-awesome-sass', '~> 5.4.1'
 gem 'font-awesome-rails'
 gem 'unicorn'
+gem 'ed25519'
+gem 'bcrypt_pbkdf'
 
 group :deployment do
   # capistrano
