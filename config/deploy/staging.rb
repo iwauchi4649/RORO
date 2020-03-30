@@ -4,4 +4,4 @@
 server '133.167.65.60', user: 'syoma', roles: %w{app db web}, port: 61203
 
 #デプロイするサーバーにsshログインする鍵の情報。サーバー編で作成した鍵のパス
-set :ssh_options, keys: '~/.ssh/conoha_hoge/id_rsa'
+set :ssh_options, keys: '~/.ssh/id_rsa'

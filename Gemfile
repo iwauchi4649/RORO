@@ -70,7 +70,6 @@ gem "jquery-rails"
 gem 'jquery-turbolinks'
 gem 'font-awesome-sass', '~> 5.4.1'
 gem 'font-awesome-rails'
-gem 'unicorn'
 gem 'ed25519'
 gem 'bcrypt_pbkdf'
 
@@ -80,4 +79,8 @@ group :deployment do
   gem 'capistrano-rails'
   gem 'capistrano-bundler'
   gem 'capistrano-rbenv'
+end
+
+group :production do
+  gem 'unicorn', '5.4.1'
 end

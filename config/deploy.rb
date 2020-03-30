@@ -25,6 +25,8 @@ append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bund
 
 #カリキュラム通りに進めた場合、2.5.1か2.3.1です
 set :rbenv_ruby, '2.5.1'
+set :rbenv_type, :user
+set :rbenv_path, '/usr/local/src/rbenv/bin/rbenv'
 
 # 出力するログのレベル。
 set :log_level, :debug
