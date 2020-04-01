@@ -73,13 +73,13 @@ gem 'font-awesome-rails'
 gem 'ed25519'
 gem 'bcrypt_pbkdf'
 
-# group :deployment do
-#   # capistrano
-#   gem 'capistrano'        
-#   gem 'capistrano-rails'
-#   gem 'capistrano-bundler'
-#   gem 'capistrano-rbenv'
-# end
+group :development, :test do
+  gem 'capistrano'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano3-unicorn'
+end
 
 group :production do
   gem 'unicorn', '5.4.1'
