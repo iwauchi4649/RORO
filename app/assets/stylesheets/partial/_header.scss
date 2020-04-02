@@ -170,6 +170,7 @@
     transition: all .3s cubic-bezier(.165,.84,.44,1);
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
+    display: none;
 
     &__in{
       height: 626px;
@@ -203,6 +204,7 @@
   }
   .menu.act{
     opacity: 1;
+    display: block;
     top: 60px;
     z-index: 100000;
   }

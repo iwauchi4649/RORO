@@ -4,7 +4,6 @@
 */
 html{
 	color:#000;
-	text-decoration: none;
 }
 /*
 	TODO remove settings on BODY since we can't namespace it.
@@ -36,6 +35,7 @@ input,
 textarea,
 p{
 	font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+	text-decoration: none;
 }
 blockquote,
 th,
