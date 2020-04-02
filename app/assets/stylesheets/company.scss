@@ -137,6 +137,18 @@
     }
   }
   .company__content{
+    &__photos{
+      height: 12.5em;
+
+      &__up{
+        height: 50%;
+      }
+
+      &__down{
+        height: 50%;
+      }
+    }
+
     &__info{
       ul{
         padding-inline-start: 0;
@@ -162,15 +174,6 @@
   .company__content{
     &__photos{
       display: block;
-      height: 12.5em;
-
-      &__up{
-        height: 50%;
-      }
-
-      &__down{
-        height: 50%;
-      }
     }
     &__info{
       &__list{
