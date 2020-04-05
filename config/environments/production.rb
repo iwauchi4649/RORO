@@ -89,18 +89,18 @@ Rails.application.configure do
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
 
-  # Do not dump schema after migrations.
-  config.active_record.dump_schema_after_migration = false
-
-  config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+  config.action_mailer.default_url_options = {  :host => 'http://roro-or.com'or'3.112.185.237' }
+  #送信方法を指定（この他に:sendmail/:file/:testなどがあります)
   config.action_mailer.delivery_method = :smtp
+  #送信方法として:smtpを指定した場合は、このconfigを使って送信詳細の設定を行います
   config.action_mailer.smtp_settings = {
-      :address => "smtp.gmail.com",
-      :port => 587,
-      :domain => "gmail.com",
-      :user_name => Rails.application.credentials.gmail[:user_name],
-      :password => Rails.application.credentials.gmail[:password], #2段階認証パスワード
-      :authentication => :plain,
-      :enable_starttls_auto => true
+    #gmail利用時はaddress,domain,portは下記で固定
+    address:"smtp.gmail.com",
+    domain: 'gmail.com',
+    port:587,
+    #gmailのユーザアカウント（xxxx@gmail.com)※念のため、credentials.yml.enc行き
+    user_name: Rails.application.credentials.gmail[:user_name],
+    #gmail２段階認証回避のためにアプリケーションでの利用パスワードを取得、必ずcredentials.yml.endに設定を！！
+    password: Rails.application.credentials.gmail[:password],
   }
 end
