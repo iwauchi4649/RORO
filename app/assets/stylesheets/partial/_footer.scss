@@ -43,6 +43,8 @@
     align-items: center;
   }
 }
+
+
 .footer{
   background-color: #181818;
   color: #ffffff;
@@ -99,6 +101,9 @@
     &__address{
       p br{
         line-height: initial;
+      }
+      a{
+        color: white;
       }
     }
   }
