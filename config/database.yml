@@ -51,5 +51,5 @@ production:
   <<: *default
   database: RORO_production
   username: root
-  password: <%= ENV['DATABASE_PASSWORD'] %>
+  password: roro4649
   socket: /var/lib/mysql/mysql.sock
